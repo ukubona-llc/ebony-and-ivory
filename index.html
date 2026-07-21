@@ -217,6 +217,43 @@
   .compare .row-ivory td:first-child::before{content:"○ "; color:var(--ivory-dim);}
   .compare .row-ebony td:first-child::before{content:"● "; color:var(--amber);}
 
+  /* ---------- VIDEO EMBED ---------- */
+  .video-block{
+    margin:22px 0 8px;
+    border:1px solid var(--hairline);
+    border-radius:8px;
+    overflow:hidden;
+    background:var(--ebony-panel);
+  }
+  .video-frame{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+  }
+  .video-frame iframe{
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    border:0;
+  }
+  .video-caption{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    padding:12px 16px;
+    border-top:1px solid var(--hairline);
+    font-family:'DM Mono', monospace;
+    font-size:11px;
+    color:var(--ivory-dim);
+    flex-wrap:wrap;
+  }
+  .video-caption .who{
+    display:flex; align-items:center; gap:8px;
+    text-transform:uppercase; letter-spacing:0.06em;
+  }
+  .video-caption .who .swatch{width:8px;height:8px;border-radius:50%; background:var(--ivory-dim);}
+
   /* ---------- CHORD ID CARDS ---------- */
   .triad-grid{
     display:grid;
@@ -462,6 +499,16 @@
         </tr>
       </tbody>
     </table>
+
+    <div class="video-block">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/mkeP-Yd3rSo" title="Rick Beato — Music Theory That Actually Makes Sense, Lesson 1: Harmony" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-caption">
+        <span class="who"><span class="swatch"></span>the ivory side of the argument</span>
+        <span>Rick Beato — Music Theory That Actually Makes Sense, Lesson 1: Harmony</span>
+      </div>
+    </div>
   </section>
 
   <!-- SECTION 2: WHAT THE TRIAD COMPRESSES AWAY -->
